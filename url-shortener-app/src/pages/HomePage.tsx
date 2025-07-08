@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Container, Typography } from "@mui/material";
-import URLShortenerForm from "../components/URLShortenerForm";
 import URLShortenerList from "../components/URLShortenerList";
+import { URLShortenerForm } from "../components/URLShortenerForm"; 
+
 
 type Item = {
   original: string;
