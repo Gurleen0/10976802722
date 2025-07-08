@@ -2,6 +2,15 @@ import React, { useState } from "react";
 import { Container, Typography } from "@mui/material";
 import URLShortenerList from "../components/URLShortenerList";
 import { URLShortenerForm } from "../components/URLShortenerForm"; 
+import { logEvent } from "../../../logging-middleware/src/log";
+
+logEvent({
+  stack: "frontend",
+  level: "info",
+  package: "component",
+  message: "User clicked login button",
+});
+
 
 
 type Item = {
